@@ -7,12 +7,12 @@ from xlpy import *
 def main_menu():
     clear()
     print(
-        "   ==========================================" +
         "   = TEMBAK PAKET XL - WWW.GEBANGKIIDIW.COM =" +
-        "   ==========================================" +
-        "\nSilakan pilih menu yang ingin Anda bintangi:"
+        "   = YOUTUBE GEBANG KIIDIW =" +
+        "   ===============================" +
+        "\nSilahkan pilih menu Anda :"
         "\n[1] Paket Pembelian" + 
-        "\n[2] Req OTP"  +
+        "\n[2] Req OTP Code"  +
         "\n[0] Keluar"
     )
     choice = str(input(" >> "))
@@ -32,16 +32,16 @@ def exec_menu(choice):
     return
 
 def menu_1():
-    print("===Paket Pembelian Menu")
-    msisdn = str(input("Masukan MSISDN >> "))
+    print("===Paket Pembelian Menu=== WWW.GEBANGKIIDIW.COM")
+    msisdn = str(input("Masukan Nomer Anda >> "))
     passwd = str(input("Masukan OTP >> "))
     print(
-        "List of Internet package Service ID:"
-        "\n[4] Xtra Combo 10GB(Rp. 59.900) - 8211183" +
-        "\n[5] XtraKuota 30GB (Rp. 10.000) - 8110577" +
+        "Daftar Paket XL Service ID:"
+        "\n[1] Xtra Combo 10GB(Rp. 59.900) - 8211183" +
+        "\n[2] XtraKuota 30GB (Rp. 10.000) - 8110577" +
         "\n-----------------------------------------"
         )
-    serviceid = str(input("Input your Service ID >> "))
+    serviceid = str(input("Masukan Service ID Di Atas >> "))
     xl = XL(msisdn)
     r = xl.loginWithPassword(passwd)
     if(r != False):
@@ -54,11 +54,11 @@ def menu_1():
         
 def menu_2():
     clear()
-    print(".::Password Menu::.")
-    msisdn = str(input("Input your MSISDN >> "))
+    print("Request OTP Code - WWW.GEBANGKIIDIW.COM")
+    msisdn = str(input("Masukan Nomer Anda >> "))
     xl = XL(msisdn)
     print(xl.reqPassword()['message'])
-    decision = str(input("Want to repeat the process [Y/N]? >> "))
+    decision = str(input("Ingin Mengulangi Prosesnya Masukan [Y] Balik ke Menu Utama [N]? >> "))
     menu_actions['main']() if(decision in ['N','n']) else menu_actions['2']()
     return
 
