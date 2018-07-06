@@ -7,15 +7,17 @@ from xlpy import *
 def main_menu():
     clear()
     print(
-        "\n############################################################"
-        "\n     Tembak Paket XL"
+        "\n###################################################"
+        "\n###################################################"
+        "\n           TEMBAK PAKET XL"
         "\n     Mod By     : Gebang Kiidiw"
         "\n     Contact Me : gebangkiidiw@gmail.com"
         "\n     Blog       : www.gebangkiidiw.com"
         "\n     Youtube    : Gebang Kiidiw"
         "\n     Instagram  : @Bang_Joss24"
         "\n     Thanks To  : Alberto Anggi"
-        "\n############################################################" +
+        "\n###################################################"
+        "\n###################################################" +
         "\nSilahkan pilih menu Anda :"
         "\n[1] Paket Pembelian" + 
         "\n[2] Req OTP Code"  +
