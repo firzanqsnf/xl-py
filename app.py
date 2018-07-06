@@ -40,13 +40,26 @@ def exec_menu(choice):
     return
 
 def menu_1():
-    print("===Paket Pembelian Menu=== WWW.GEBANGKIIDIW.COM")
+    print(
+         "\n###################################################"
+         "\n###################################################"
+         "\n           TEMBAK PAKET XL"
+         "\n     Mod By     : Gebang Kiidiw"
+         "\n     Contact Me : gebangkiidiw@gmail.com"
+         "\n     Blog       : www.gebangkiidiw.com"
+         "\n     Youtube    : Gebang Kiidiw"
+         "\n     Instagram  : @Bang_Joss24"
+         "\n     Thanks To  : Alberto Anggi"
+         "\n###################################################"
+         "\n###################################################"
+         "\nPaket Pembelian :"
+    )
     msisdn = str(input("Masukan Nomer Anda >> "))
     passwd = str(input("Masukan OTP >> "))
     print(
         "Daftar Paket XL Service ID:"
-        "\n[1] Xtra Combo 10GB(Rp. 59.900) - 8211183" +
-        "\n[2] XtraKuota 30GB (Rp. 10.000) - 8110577" +
+        "\n[1] Xtra Combo 10GB(Rp. 59.900) ID >> - 8211183" +
+        "\n[2] XtraKuota 30GB (Rp. 10.000) ID >> - 8110577" +
         "\n-----------------------------------------"
         )
     serviceid = str(input("Masukan Service ID Di Atas >> "))
@@ -62,7 +75,20 @@ def menu_1():
         
 def menu_2():
     clear()
-    print("Request OTP Code - WWW.GEBANGKIIDIW.COM")
+    print(
+         "\n###################################################"
+         "\n###################################################"
+         "\n           TEMBAK PAKET XL"
+         "\n     Mod By     : Gebang Kiidiw"
+         "\n     Contact Me : gebangkiidiw@gmail.com"
+         "\n     Blog       : www.gebangkiidiw.com"
+         "\n     Youtube    : Gebang Kiidiw"
+         "\n     Instagram  : @Bang_Joss24"
+         "\n     Thanks To  : Alberto Anggi"
+         "\n###################################################"
+         "\n###################################################"
+         "\nRequest OTP Code :"
+    )
     msisdn = str(input("Masukan Nomer Anda >> "))
     xl = XL(msisdn)
     print(xl.reqPassword()['message'])
