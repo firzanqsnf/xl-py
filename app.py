@@ -7,11 +7,13 @@ from xlpy import *
 def main_menu():
     clear()
     print(
-        "   .::XL - Direct Purchase Package::." +
-        "\nPlease choose the menu you want to start:"
-        "\n[1] Purchase Package" + 
-        "\n[2] Request Password"  +
-        "\n[0] Quit"
+        "   ==========================================" +
+        "   = TEMBAK PAKET XL - WWW.GEBANGKIIDIW.COM =" +
+        "   ==========================================" +
+        "\nSilakan pilih menu yang ingin Anda bintangi:"
+        "\n[1] Paket Pembelian" + 
+        "\n[2] Req OTP"  +
+        "\n[0] Keluar"
     )
     choice = str(input(" >> "))
     exec_menu(choice)
@@ -30,16 +32,12 @@ def exec_menu(choice):
     return
 
 def menu_1():
-    print(".::Purchase Package Menu::.")
-    msisdn = str(input("Input your MSISDN >> "))
-    passwd = str(input("Input your Password >> "))
+    print("===Paket Pembelian Menu")
+    msisdn = str(input("Masukan MSISDN >> "))
+    passwd = str(input("Masukan OTP >> "))
     print(
         "List of Internet package Service ID:"
-        "\n[1] Combo Lite 3GB (Rp. 19.900) - 8210882" + 
-        "\n[2] Combo Lite 5GB (Rp. 29.900) - 8210883" +
-        "\n[3] Combo Lite 9GB (Rp. 49.900) - 8210884" +
-        "\n[4] Combo Lite 17GB(Rp. 79.900) - 8210885" +
-        "\n[4] Combo Lite 25GB(Rp. 99.900) - 8210886" +
+        "\n[4] Xtra Combo 10GB(Rp. 59.900) - 8211183" +
         "\n[5] XtraKuota 30GB (Rp. 10.000) - 8110577" +
         "\n-----------------------------------------"
         )
