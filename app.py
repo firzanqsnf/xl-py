@@ -48,7 +48,7 @@ def menu_1():
         print(xl.purchasePackage(serviceid)['message'])
     else:
         print("Login failed try again")
-    decision = str(input("Want to repeat the process [Y/N]? >> "))
+    decision = str(input("Ingin Mengulangi Prosesnya Masukan [Y] Kembali ke Menu Utama [N]? >> "))
     menu_actions['main']() if(decision in ['N','n']) else menu_actions['1']()
     return
         
@@ -58,7 +58,7 @@ def menu_2():
     msisdn = str(input("Masukan Nomer Anda >> "))
     xl = XL(msisdn)
     print(xl.reqPassword()['message'])
-    decision = str(input("Ingin Mengulangi Prosesnya Masukan [Y] Balik ke Menu Utama [N]? >> "))
+    decision = str(input("Ingin Mengulangi Prosesnya Masukan [Y] Kembali ke Menu Utama [N]? >> "))
     menu_actions['main']() if(decision in ['N','n']) else menu_actions['2']()
     return
 
